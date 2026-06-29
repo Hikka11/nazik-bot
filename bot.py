@@ -105,7 +105,7 @@ def call_openrouter(history, extra_instruction):
                 "X-Title": "N-Azik RP Bot"
             },
             json={
-            "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1:free",
+            "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
                 "messages": messages,
                 "max_tokens": 1000,
                 "temperature": 0.9
