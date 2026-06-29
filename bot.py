@@ -67,7 +67,7 @@ async def ask_gemini(chat_id, user_text):
         anti_repeat = f"\nЗАПРЕТ ПОВТОРОВ: не повторяй уже написанное: '{' | '.join(char_msgs)}'"
 
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+       model_name="gemini-2.0-flash-lite",
         system_instruction=SYSTEM_PROMPT + anti_repeat,
         safety_settings=[
             {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
