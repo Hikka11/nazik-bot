@@ -105,7 +105,7 @@ def call_openrouter(history, extra_instruction):
                 "X-Title": "N-Azik RP Bot"
             },
             json={
-               "model": "meta-llama/llama-3.1-8b-instruct:free",
+            "model": "google/gemma-3-4b-it:free",
                 "messages": messages,
                 "max_tokens": 1000,
                 "temperature": 0.9
