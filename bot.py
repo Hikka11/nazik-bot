@@ -105,7 +105,7 @@ def call_openrouter(history, extra_instruction):
                 "X-Title": "N-Azik RP Bot"
             },
             json={
-                "model": "mistralai/mistral-7b-instruct:free",
+               "model": "meta-llama/llama-3.1-8b-instruct:free",
                 "messages": messages,
                 "max_tokens": 1000,
                 "temperature": 0.9
