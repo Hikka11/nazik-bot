@@ -107,7 +107,12 @@ def call_openrouter(history, extra_instruction):
             timeout=30
         )
         data = response.json()
+                logger.info(f"OpenRouter response: {data}")
+        if "choices" not in data:
+            logger.error(f"No choices in response: {data}")
+            return None
         return data["choices"][0]["message"]["content"]
+
     except Exception as e:
         logger.error(f"OpenRouter error: {e}")
         return None
